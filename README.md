@@ -9,4 +9,5 @@ Help with code:
 -Generate a pie plot showing the distribution of female versus male mice using Pandas - used Xpert Learning Assistant to identify how to flip male and female data on pie chart.
 -Generate a pie plot showing the distribution of female versus male mice using pyplot - Used Xpert Learning Assistant to remove coordinates that printed in the top left corner of the chart and to learn how to place a label to the left 
 of the chart
--Calculate the IQR and quantitatively determine if there are any potential outliers - Used Xpert Learning Assistant to help identify coded needed to write'treatment data', potential outliers, and to locate rows that contain mice for each drug 
+-Calculate the IQR and quantitatively determine if there are any potential outliers - Worked with peer (Zach) to identify code and fix errors for boxplot subset and generating boxplot
+-Generate a line plot of tumor volume vs. time point for a single mouse treated with Capomulin - Used Xpert Learning Assistant to write capomulin_data code and how to extract 'Timepoint' and 'Tumor Volume (mm3)' data points to create the line graph 
