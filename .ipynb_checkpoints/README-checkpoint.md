@@ -1,13 +1,38 @@
 # matplotlib_challenge
 UNC class challenge 5 assignment
 
-Help with code:
--duplicate mice by ID number - help from Justin, tutor, with bracket placement for duplicate code
--clean DataFrame - help from Justin, tutor, with identifying the type of function needed to run thed code
--aggregate method - used Xpert Learning Assistant to define and show code for the aggregate method
--plot bar graph of rows (Drug Regimen/Timepoint) using Pandas - used Xpert Learning Assistant to identify the code needed to sort Drug Regimen data in descending order and bars closer together
--Generate a pie plot showing the distribution of female versus male mice using Pandas - used Xpert Learning Assistant to identify how to flip male and female data on pie chart.
--Generate a pie plot showing the distribution of female versus male mice using pyplot - Used Xpert Learning Assistant to remove coordinates that printed in the top left corner of the chart and to learn how to place a label to the left 
-of the chart
--Calculate the IQR and quantitatively determine if there are any potential outliers - Worked with peer (Zach) to identify code and fix errors for boxplot subset and generating boxplot
--Generate a line plot of tumor volume vs. time point for a single mouse treated with Capomulin - Used Xpert Learning Assistant to write capomulin_data code and how to extract 'Timepoint' and 'Tumor Volume (mm3)' data points to create the line graph 
+Pymaceuticals, Inc.
+
+The purpose of this clinical study was to compare the effects of Pymaceuticals' Capomulin against other squamous cell carcinoma (SCC) treatments. This study included 249 mice diagnosed with SCC tumors that received a range of drug regimens over the course of 45 days. Tumor development was observed and  measured at specific timepoints throughout the trial. Other drug treatments included in this study were Ceftamin, Infubinol, Ketapril, Naftisol, Propriva, Ramicane, Stelasyn, Zoniferol, and a placebo,
+
+The treatment drugs Capomulin and Ramicane were observed more frequently during this 45 day time period providing a larger dataset for analysis. When comparing the average tumor volume for mice receiving these treatments, the central tendency, standard deviation and standard error were nearly identical. Other drug treatments showed much higher tendencies in these same areas. Distribution of final tumor volumes also results in nearly identical results for Capomulin and Ramicane, with Capomulin having a slightly higher median and smaller IQR. Infubinol and Ceftamin’s results indicated larger tumor volumes with greater variability and possible outliers in the dataset.
+
+The tumor volume for mouse I509, treated with Capomuli, increased for the first 21 days of the trial with a steady decrease for the remainder of the study. A positive correlation between tumor volume and weight was also observed with the Capomulin drug regimen. 
+
+In conclusion, Capomulin outperformed all but one other drug treatment, included in this study, in decreasing the tumor volume of mice with SCC. Capomulin showed similar results of decrease with  Ramicane. 
+
+
+
+Technologies used to analyze and visual data: 
+matplotlib, pands, scipy, numpy
+
+
+
+Credits:
+- Duplicate Mouse ID error code was solved by Juson (tutor) by switching () to []
+- Xpert Learning Assistant provided input for () within the .agg code
+- Xpert Learning Assistant provided 'mouse_rows = mouse_rows.sort_values(ascending=False)' code to print resuts in descending order
+- Xpert Learning Assistant provided 'sex_dist.reindex' to display male results on the top half of the pie chart
+- Subset code 'tumor_volumes = treatment_data['Tumor Volume (mm3)']' and 'tumor_vol_data.append(tumor_volumes)' provided by peer, Zach
+- Xpert Learning Assistant provided insite identify errors in code 'capomulin_data = clean_results[(clean_results['Mouse ID'] == mouse_id) & (clean_results['Drug Regimen'] == 'Capomulin')]'
+    
+
+
+The purpose of this clinical study was to compare the effects of Pymaceuticals' Capomulin against other squamous cell carcinoma (SCC) treatments. This study included 249 mice diagnosed with SCC tumors that received a range of drug regimens over the course of 45 days. Tumor development was observed and  measured at specific timepoints throughout the trial. Other drug treatments included in this study were Ceftamin, Infubinol, Ketapril, Naftisol, Propriva, Ramicane, Stelasyn, Zoniferol, and a placebo,
+
+The treatment drugs Capomulin and Ramicane were observed more frequently during this 45 day time period providing a larger dataset for analysis. When comparing the average tumor volume for mice receiving these treatments, the central tendency, standard deviation and standard error were nearly identical. Other drug treatments showed much higher tendencies in these same areas. Distribution of final tumor volumes also results in nearly identical results for Capomulin and Ramicane, with Capomulin having a slightly higher median and smaller IQR. Infubinol and Ceftamin’s results indicated larger tumor volumes with greater variability and possible outliers in the dataset.
+
+The tumor volume for mouse I509, treated with Capomuli, increased for the first 21 days of the trial with a steady decrease for the remainder of the study. A positive correlation between tumor volume and weight was also observed with the Capomulin drug regimen. 
+
+In conclusion, Capomulin outperformed all but one other drug treatment, included in this study, in decreasing the tumor volume of mice with SCC. Capomulin showed similar results of decrease with  Ramicane. 
+ 
